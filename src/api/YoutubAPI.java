@@ -15,9 +15,9 @@ public class YoutubAPI {
     public static void test() {
     	try {
 	    	String apiurl = "https://www.googleapis.com/youtube/v3/search";
-			apiurl += "?key=AIzaSyBnD1pz0KX2IeJZslnaWwQbedlA8b_1CXA";											//api 키
+			apiurl += "?key=자신의api key";												//api 키
 			apiurl += "&part=snippet&type=video&maxResults=20&videoEmbeddable=true";	//max result 최대 20개 그 이상이면 할당량 더 사라짐.
-			apiurl += "&q=" + URLEncoder.encode("축구","UTF-8");						//검색어 한글깨짐 방지.
+			apiurl += "&q=" + URLEncoder.encode("축구","UTF-8");							//검색어 한글깨짐 방지.
 			
 			/* 
 			 * HttpURLConnection : 요청방식을 결정할 수 있다, 데이터 길이 제한이 없기 때문에 길이를 알 수 없는 데이터 요청 시 사용한다.
